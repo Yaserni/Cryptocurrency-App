@@ -1,0 +1,168 @@
+body {
+    text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("assets/images/im2.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#coinsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+
+.coinStyle {
+    border: 1px solid black !important;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    background-color: inherit!important;
+    padding: 15px;
+}
+
+
+/*  */
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 80px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    right: 3%;
+}
+
+* Hide default HTML checkbox */ .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* .left {
+    text-align: right;
+} */
+
+button {
+    width: fit-content!important;
+}
+
+navButtons {
+    border: none!important;
+}
+
+#modalDisplay {
+    display: none;
+}
+
+#errorSelection {
+    color: red;
+}
+
+#about {
+    color: black;
+    font-size: x-large;
+    text-align: left;
+}
+
+p {
+    width: 1500px;
+}
+
+.left {
+    text-align: left;
+}
+
+.inputStyle {
+    width: 100px!important;
+}
+
+#about {
+    padding-left: 20px;
+}
